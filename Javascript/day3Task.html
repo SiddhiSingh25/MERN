@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Write a code snippet that checks if a number x is greater than 10. If true, print "x is greater than 10."
+        let x = 12;
+        if (x > 10) {
+            console.log("x is greater than 10")
+        }
+        //Write a code snippet that checks if a variable age is greater than or equal to 18. If true, print "You are an adult"; otherwise, print "You are a minor."
+        let age = 19
+        if (age >= 18) {
+            console.log("You are an adult")
+
+        } else {
+            console.log("You are a minor")
+        }
+        //Write a code snippet that checks a variable score. If score is greater than 90, print "A"; if score is between 80 and 90, print "B"; if score is between 70 and 80, print "C"; otherwise, print "D."
+        let score = 80;
+        if (score > 90) {
+            console.log("A")
+
+        }
+        else if (score <= 90 && score > 80) {
+            console.log("B");
+        }
+        else if (score <= 80 && score > 70) {
+            console.log("C")
+        }
+        else {
+            console.log("D")
+        }
+        //Write a code snippet that checks if a number y is positive and even. Print "Positive and Even" if both conditions are true.
+        let y = 12;
+        if (y >= 0) {
+            if (y % 2 == 0) {
+                console.log("Positive and even")
+            }
+        }
+        // Write a code snippet that checks if a variable isLoggedIn is true. If true, print "Welcome back!".
+        let isLoggedIn = true;
+        if (isLoggedIn) {
+            console.log("Welcome back");
+        }
+        //Write a code snippet that checks if a variable color is "red". If true, print "Stop"; otherwise, print "Go."
+        let color = "green"
+        if (color == "red") {
+            console.log("Stop")
+
+        } else {
+            console.log("Go")
+        }
+        //Write a code snippet that checks if a variable temp is less than 0 or greater than 100. Print "Extreme temperature" if either condition is true; otherwise, print "Normal temperature."
+        let temp = 7;
+        if (temp < 0 || temp > 100) {
+            console.log("Extreme Temprature")
+        } else {
+            console.log("Condition is false")
+        }
+        //Write a code snippet that checks a variable marks. If marks are greater than or equal to 90, print "Excellent"; if marks are between 75 and 89, print "Good"; if marks are between 50 and 74, print "Average"; otherwise, print "Poor."
+        let marks = 78;
+        if (marks >= 90) {
+            console.log("eXCELLENT")
+        }
+        else if (marks < 90 && marks > 75) {
+            console.log("Good")
+        }
+        else if (marks < 75 && marks > 50) {
+            console.log("Average")
+        }
+        else {
+            console.log("Poor");
+        }
+        //Write a code snippet that checks if a number z is even. If it is even, further check if it is divisible by 4. Print "Divisible by 4" if true; otherwise, print "Even but not divisible by 4."
+        let z = 6;
+        if (z % 2 == 0) {
+            if (z % 4 == 0) {
+                console.log("Divisible by 4")
+            }
+        } else {
+            console.log("Even but not divisible by 4")
+        }
+        //Write a code snippet that checks if a variable name is undefined. If true, print "Name is not defined."
+        let varName;
+        if (varName = 'undefined') {
+            console.log("Name is not defined")
+
+        }
+        //Write a for loop that prints the numbers from 1 to 5.
+        for (let index = 1; index <= 5; index++) {
+            console.log(index)
+
+        }
+        //Write a while loop that prints the numbers from 1 to 5.
+        let checkNum = 1;
+        while (checkNum <= 5) {
+            console.log(checkNum)
+            checkNum++;
+        }
+        //Write a do-while loop that prints the numbers from 1 to 5.
+        let doVar = 1;
+        do {
+            console.log(doVar)
+            doVar++
+        } while (doVar <= 5);
+        //Write a for loop that iterates through an array fruits and prints each fruit.
+        let fruit = ["Apple", "Mango", "Banana"]
+        for (let index = 0; index < fruit.length; index++) {
+            console.log(fruit[index])
+
+        }
+        //Write a for loop that prints only the even numbers from 1 to 10.
+        for (let i = 2; i <= 10; i++) {
+            if (i % 2 == 0) {
+                console.log(i)
+            }
+        }
+        //Write a while loop that prints numbers from 1 to 10, but stops if the number 5 is reached.
+        let newVar = 1;
+        while (newVar <= 10) {
+            if (newVar != 5) {
+                console.log(newVar)
+                newVar++;
+            }
+            else {
+                break;
+            }
+        }
+        //Write a do-while loop that keeps asking for a password until the correct one is entered. Print "Access granted" when the correct password is enterd
+        let correctPassword = "password123";
+        let userInput;
+
+        do {
+            userInput = prompt("Enter the password:");
+        } while (userInput !== correctPassword);
+
+        console.log("Access granted");
+        //Write a for loop that checks numbers from 1 to 10. Print "Odd" if the number is odd, and "Even" if the number is even.
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                console.log(i + " is Even");
+            } else {
+                console.log(i + " is Odd");
+            }
+        }
+        // Write a while loop that counts the number of times the letter "a" appears in a string str = "banana"
+        let str = "banana";
+        let count = 0;
+        let i = 0;
+
+        while (i < str.length) {
+            if (str[i] === 'a') {
+                count++;
+            }
+            i++;
+        }
+
+        console.log("The letter 'a' appears " + count + " times in the string.");
+        //Write a nested loop that prints a 3x3 grid of numbers from 1 to 9.
+        let num = 1;
+
+        for (let i = 0; i < 3; i++) {
+            let row = "";
+            for (let j = 0; j < 3; j++) {
+                row += num + " ";
+                num++;
+            }
+            console.log(row.trim());
+        }
+        //Write a JavaScript program that prints the word "Raj" 8 times, each on a new line, in the browser's console. Use a loop to build the string and then output it using console.log().
+        let result = "";
+
+        for (let i = 0; i < 8; i++) {
+            result +=  "Raj\n";
+        }
+
+        console.log(result);
+
+
+
+    </script>
+</body>
+
+</html>

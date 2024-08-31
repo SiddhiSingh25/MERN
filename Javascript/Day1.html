@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>KDFJ</h1>
+    <script>
+        // var, let, const 
+        /*
+        #VAR CAN BE RE-DECLARED AND RE- INTIALIZED  | Global scope |  ES5
+        #LET - RE INTIALIZED BUT RE DECLARATION IS NOT POSSIBLE | block scope | ES6
+        #const - RE intialization and re declaration both is not possible \ block scope | ES6
+        */
+       var a = 10;
+       var a = 20;//Re declaration and re  assign
+
+       let x= 4;
+       x = 5;   //Re intialzation or re assign
+
+       const z = "ConstVal"  // re declaration and re assig not possible
+       // z = "updatedVal" ******errrr
+       // const z = "newVal" ****error
+       let name = "siddhi"
+       alert(name)
+       let c =5;
+       let b= 6;
+       let store = c> b || b>c;
+       console.log(!store)// store return true 
+       let newName = "alpha"
+       let nm = "sigma"
+       console.log(nm+=newName)
+        
+    </script>
+</body>
+</html>
