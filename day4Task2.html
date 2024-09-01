@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Named function that adds two numbers and returns the result.
+        function addNumbers(a, b) {
+            return a + b;
+        }
+        console.log("Sum = ", addNumbers(5, 10))
+        //Named function that finds the maximum of two numbers.
+        function getMax(a, b) {
+            return a > b ? a : b;
+        }
+        console.log("Max = ", getMax(5, 10));
+        //Arrow function that squares a number.
+        const squareNumber = (a) => a * a;
+        console.log("Square =", squareNumber(3));
+        //Arrow function that concatenates two strings.
+        const concatenateStrings = (str1, str2) => {
+            str1 + " " + str2;
+        }
+        console.log("Concatenation of string ", concatenateStrings("Hello", "World"));
+        //Function expression that multiplies two numbers.
+        const multiplyNumbers = function (a, b) {
+            return a * b;
+        };
+        console.log("Product = ", multiplyNumbers(5, 10));
+        //IIFE that calculates the sum of two numbers.
+        (function (a, b) {
+            console.log("IIFE Sum:", a + b); // 15
+        })(2, 3);
+        //Named function that checks if a number is positive.
+        function isPositive(num) {
+            return num > 0;
+        }
+        console.log("Is Positive:", isPositive(5));
+        //ge hello alice!
+        function greetUser(name) {
+            console.log("Hello, " + name + "!");
+        }
+        greetUser("Alice");
+        //Function expression that calculates the average of two numbers.
+        const averageNumbers = function (a, b) {
+            return (a + b) / 2;
+        };
+        console.log("Average:", averageNumbers(5, 15));
+        //Function expression that finds the minimum of two numbers.
+        const findMin = function (a, b) {
+            return a < b ? a : b;
+        };
+        console.log("Min:", findMin(5, 10));
+        // IIFE that converts an amount from USD to EUR (Assuming 1 USD = 0.85 EUR).
+        (function (usd) {
+            const eur = usd * 0.85;
+            console.log("USD to EUR:", eur);
+        })(100);
+        //Arrow function that checks if a number is even.
+        const checkEven = (num) => {
+            return num % 2 === 0 ? "Even" : "Odd";
+        }
+
+        console.log(checkEven(4))
+        //named function that calculates the area of a rectangle.
+        function calculateArea(l, b) {
+            return l * b;
+        }
+        console.log(calculateArea(2, 3))
+        // 
+        function kmToMiles(km) {
+            return km * 0.621371;
+        }
+        console.log("Km to Miles:", kmToMiles(10));
+        //Arrow function that calculates the cube of a number.
+        const cubeNumber = (a) => a * a * a;
+        console.log("Cube:", cubeNumber(3));
+        //calculate perimeter of a rec
+        let perimeter = (l, w) => {
+            let cal = 2 * l * w;
+            return cal;
+        }
+        console.log(perimeter(2, 3))
+        // calc prime
+        const checkPrime = (n) => {
+            let count = 0;
+            for (let index = 2; index < n; index++) {
+                if (n % index == 0) {
+                    count = 1;
+                }
+            }
+            if (count == 1) {
+                console.log("Not prime");
+            }
+            else {
+                console.log("Prime");
+            }
+        }
+        checkPrime(4);
+        // convert sec to minutes using arrow
+        const calcMin = (sec) => {
+            return sec / 60;
+        }
+        console.log(calcMin(120))   
+    </script>
+</body>
+
+</html>

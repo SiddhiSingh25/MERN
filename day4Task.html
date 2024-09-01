@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // Named function
+       function namedFunction(){
+           console.log("Named Function");
+       }
+       namedFunction();
+
+       // Function expression
+       const expFunction = function(){
+           console.log("Expression function");
+       };
+       expFunction();
+
+       // Arrow function
+       const arrFunction = () => {
+           console.log("Arrow function");
+       };
+       arrFunction();
+
+       // Immediately Invoked Function Expression (IIFE)
+       (function iifeFunction(){
+           console.log("IIFE Function");
+       })();
+
+       // Callback function example using setInterval
+       setInterval(() => {
+           console.log("Callback Function");
+       }, 10000);
+
+       // Function with async/await (though not required here)
+       async function asyncFunction() {
+           console.log("Async Function");
+       }
+       asyncFunction();
+
+       // No parameter, no return type
+       const printSquare = () => {
+           console.log(2 * 2);
+       };
+       printSquare();
+
+       // With parameter, no return type
+       const printSquareWANR = (a) => {
+           console.log(a * a);
+       };
+       printSquareWANR(3);
+
+       // No parameter, with return type
+       const printSquareWRNA = () => {
+           let result = 5 * 5;
+           return result;
+       };
+       let resultWRNA = printSquareWRNA();
+       console.log(resultWRNA);
+
+       // With parameter, with return type
+       const printSquareWAWR = (a) => {
+           let calc = a * a;
+           return calc;
+       };
+       let resultWAWR = printSquareWAWR(4);
+       console.log(resultWAWR);
+    </script>
+</body>
+</html>

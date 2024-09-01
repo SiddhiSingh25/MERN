@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   //      // named function
+   //      function namedFun(){
+   //          console.log("Named function")
+   //      }
+   //    // anonymopus function
+   //    /*function(){
+   //      console.log("Hello")
+   //    }*/
+   //   // function expressiion
+   //   const expFun = ()=>{
+   //      console.log("Exp function")
+   //   }
+   //   // arrow function
+   //   const arrowFun= ()=>{
+   //      console.log("Arrow function")
+   //   }
+   //   // immediately invoked function 
+   //   (function iife(){
+   //      console.log("IIFe function")
+   //   })();
+   //   arrowFun();
+   //   expFun()
+   //   namedFun()
+   //   //setInterval(()=>{console.log("print s")}, 2000)
+   //   setInterval(function (){
+   //      console.log("Helllo")
+   //   }, 3000)
+   //no return , no arguement 
+   let a = 5;
+   let b = 3;
+   const sum =()=>{
+      console.log(a+b)
+   }
+   sum();
+   // no arguement with return type 
+   const sub=()=>{
+      let c = a - b;
+      return c;
+   }
+   let storesUB = sub();
+   console.log(storesUB)
+   //no return with arguement
+   const mul = (a,b)=>{
+      console.log(a*b)
+   }
+   mul(2, 3);
+   // with return and arguement 
+   const div = (a,b)=>{
+      return a/b;
+   }
+   let storeDiv = div(10,2)
+   console.log(storeDiv)
+
+   let calcIntrest = (p, r,t)=>{
+      let cal = (p*r*t)/100;
+      return cal;
+   }
+   let storeIntrest = calcIntrest(2,4,3);
+   console.log(storeIntrest)
+    </script>
+</body>
+</html>
