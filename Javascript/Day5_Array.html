@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" class="getData">
+        <input type="text" class="getData">
+        <input type="submit" name="" id="submit">
+    </form>
+    <div class="box" style="border: 2px solid transparent; height: 10vh; width: 30vw;"></div>
+    <script>
+        /*let arr = [];
+
+        document.querySelector("#submit").addEventListener("click", (e) => {
+            e.preventDefault();
+
+            document.querySelectorAll(".getData").forEach((e) => {
+                arr.push(e.value)
+
+            })
+            let clutter = "";
+            arr.forEach((e) => {
+                clutter += `
+            <p>${e}</p>`
+                document.querySelector(".box").innerHTML = `${clutter}`
+                document.querySelector(".box").style.border = "2px solid black";
+            })
+        })*/
+        /* let arr = [1,2,3,4,5,6,7,8,9];
+         /*let newArr = arr.map((elm)=>{
+          let co = elm%2==0 && elm;
+          return co
+         })
+         console.log(newArr)
+      //   
+      //    console.log(newArr)
+      // const r=[]
+      //    let evn = arr.map(e=>{
+          
+      //     if(e%2==0){
+      //         return r.push(e);
+      //     }
+      //    })
+      //   // console.log(evn)
+      //    console.log(r)*/
+  let arr = [1,2,3,4,5,6,7,8,9];
+         let odd  =  arr.filter((e)=>{
+          return e%2!=0;
+         })
+         console.log(odd)
+
+    </script>
+</body>
+
+</html>

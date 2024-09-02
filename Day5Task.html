@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Convert a strings to uppercase.
+        //  var str='this'=>THIS
+        let str = 'this'
+        console.log(str.toUpperCase())
+        //Find the length of each word in a array using map or forEach.
+        //let words = ["apple", "banana", "cherry"] =>  // [5, 6, 6]
+        let words = ["apple", "banana", "cherry"];
+        /* let store = []
+           words.forEach((e)=>{
+               store.push(e.length)
+           })*/
+        let store = words.map((item) => {
+            return item.length;
+        })
+        console.log(store);
+        //Check if each number in a array is even also for the  odd.
+        //let numbers = [1, 2, 3, 4, 5] => // ["odd", "even", "odd", "even", "odd"]
+        let numbers = [1, 2, 3, 4, 5];
+        let evenOddCalc = numbers.map((e) => {
+            return e % 2 == 0 ? "Even" : "Odd";
+        })
+        console.log(evenOddCalc);
+        //  Using Filter () even numbers from a array.
+        //let numbers = [1, 2, 3, 4, 5];// [2, 4]
+        let oddCalc = numbers.filter((e) => {
+            return e % 2 == 0;
+        })
+        console.log(oddCalc)
+        //Using Filter () words longer than 5 characters.
+        let wordsFruit = ["apple", "banana", "cherry", "date"];// ["banana", "cherry"]
+        let wordsFilter = wordsFruit.filter((e) => {
+            return e.length > 5;
+        })
+        console.log(wordsFilter)
+        //Using Filter () numbers greater than 10.
+        let numbersNew = [5, 10, 15, 20];// [15, 20]
+        let storeGreaterNum = numbersNew.filter((e) => {
+            return e > 10;
+        })
+        console.log(storeGreaterNum)
+        // Using Filter () negative numbers from a array
+        let numbersNeg = [-5, -1, 0, 3, 7]; // [0, 3, 7]
+        let numNegStore = numbersNeg.filter((e) => {
+            return e >= 0;
+        })
+        console.log(numNegStore)
+        //Concatenate two strings.
+        let str1 = "Hello, ";
+        let str2 = "world!";  //"Hello, world!"
+        let strNew = str1.concat(str2)
+        console.log(strNew)
+        // Check if a string contains a specific substring using  match as well as includes.
+        //let text = "Hello, world!";
+        //Find the length of given string.
+        let text = "Hello";
+        console.log(text.length)
+        //Convert a string to uppercase.
+        console.log(text.toUpperCase())
+
+        //Trim whitespace from the beginning and end of a string.
+        let textNew = "   Hello, world!   "; // "Hello, world!"
+        console.log(textNew.trim())
+        // How do you create a multi-line string using template literals?
+        let multilineStr =  `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos dolore`;
+    </script>
+</body>
+
+</html>

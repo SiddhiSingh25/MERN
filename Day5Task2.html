@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //How do you embed an expression within a string using template literals?
+      var a=10;
+      var str="hellow"
+      var result= `${str} ${a}`
+      console.log(result)
+      //How do you use template literals to create a string that includes both single and double quotes?
+    let quote = `"He said, "It's a beautiful day!"`;//// "He said, "It's a beautiful day!"
+    console.log(quote)
+    //Split a string into an array of words using split().
+     let sentence = "this is my pen";//["this", "is", "my", "pen"]
+     let newArr =  sentence.split(" ");
+     console.log(newArr)
+     //10 Check if a string contains a specific substring using  match as well as includes.
+     let text = "Hello, world!";
+     let subStr = "Hello";
+     let isHellow = text.includes(subStr);
+     console.log(isHellow);
+     let getStrMatch = text.match(subStr) !== null
+     console.log( getStrMatch)
+    </script>
+</body>
+</html>
