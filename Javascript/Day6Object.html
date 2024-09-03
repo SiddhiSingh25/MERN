@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let studentGradeDetails = ["A++", "90%"]
+        // let details = {
+        //     name : "Siddhi",
+        //     year : "3rd year",
+        //     branch : "IT",
+
+        // }
+        // console.log(details.name)
+        // console.log(details.year)
+        // console.log(details.branch)
+        // let detailsNew = {
+        //     fNm: "Siddhi Singh",
+        //     yearPresent : "3rd year",
+        //     branchNew : "IT",
+
+        // }
+        // console.log(detailsNew.fNm)
+        // console.log(detailsNew.yearPresent)
+        // console.log(detailsNew.branchNew)
+        //     const obj = {
+        //         name: 'Alice',
+        //         age: 30,
+        //         data: [1,2,3],
+        //         greet(name) { console.log(`Hello, ${name}`); }
+        //     };
+        //    // console.log(obj.data[1])
+        //     // const keys = Object.keys(obj);
+        //     // keys.forEach(key => {
+        //     //     console.log(`${key}: ${obj[key]}`);
+        //     // });
+
+        //     let arr = Object.values(obj);/// Syntax to convert an obj to an array => values or keys
+        //     arr.forEach((e, idx)=>{
+        //         console.log(`Elm = ${e} and Index = ${idx}`)
+        //     })
+        //    console.log(obj.greet("Siddhi"))
+        //     let newObj = {
+        //         name : "Sk",
+        //         city : "Ballia"
+        //     }
+        //  const arr = [{
+        //     name: "sk",
+        //     branch : "IT",
+        //     city : "Ballia",
+        //     cityCode  : 277401
+        //  }]
+        //  let convo = Object.keys(arr[0]);
+        //  convo.forEach((e)=>{
+        //     console.log(e)
+        //  })
+        //  arr.forEach((e)=>{
+        //     console.log(e)
+        //  })
+        //  //console.log(arr[1])
+        //
+        let studentName = [];
+        let cityArray= [];
+        let cityCodeArr = [];
+        let arr = [{
+            name: "Ak",
+            city: "Delhi",
+            cityCode : 1234
+        },
+        {
+            name: "Sk",
+            city: "Ballia",
+            cityCode : 1234
+        },
+        {
+            name: "Gk",
+            city: "Lucknow",
+            cityCode : 1234
+        },
+        {
+            name: "Mk",
+            city: "Gazipur",
+            cityCode : 1234
+        }]
+        arr.forEach((e) => {
+            studentName.push(e.name)
+            cityArray.push(e.city)
+            cityCodeArr.push(e.cityCode)
+
+        })
+        console.log(studentName)
+        console.log(cityArray)
+        console.log(cityCodeArr)
+    
+
+    </script>
+</body>
+
+</html>

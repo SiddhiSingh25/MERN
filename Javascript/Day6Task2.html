@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Given the array [{name: "John", age: 25}, {name: "Jane", age: 30}], how do you access the age of "John"?// Output: 25
+        const people = [{ name: "John", age: 25 }, { name: "Jane", age: 30 }];
+        const johnAge = people.find(person => person.name === "John").age;
+        console.log(johnAge);
+        //Update the age of "Jane" to 35 in the array [{name: "John", age: 25}, {name: "Jane", age: 30}].// Output: [{name: "John", age: 25}, {name: "Jane", age: 35}]
+        const peopleNew = [{ name: "John", age: 25 }, { name: "Jane", age: 30 }];
+        peopleNew.find(person => person.name === "Jane").age = 35;
+        console.log(people);
+        //Given the array [{name: "John", age: 25}, {name: "Jane", age: 30}], how do you access the age of "John"?// Output: 25
+        const peopleArray3 = [{ name: "John", age: 25 }, { name: "Jane", age: 30 }];
+        const jane = peopleArray3.find(person => person.name === "Jane");
+        jane.age = 35;
+        console.log(peopleArray3);
+        //Add a new object {name: "Alice", age: 22} to the array [{name: "John", age: 25}].// Output: [{name: "John", age: 25}, {name: "Alice", age: 22}]
+        const peopleArray4 = [{ name: "John", age: 25 }];
+        const updatedPeopleArray = [...peopleArray4, { name: "Alice", age: 22 }];
+        console.log(updatedPeopleArray); // Output: [{name: "John", age: 25}, {name: "Alice", age: 22}]
+        //Update the age of "Jane" to 35 in the array [{name: "John", age: 25}, {name: "Jane", age: 30}].// Output: [{name: "John", age: 25}, {name: "Jane", age: 35}]
+        const peopleArray5 = [{ name: "John", age: 25 }, { name: "Jane", age: 30 }];
+        const janePerson = peopleArray5.find(person => person.name === "Jane");
+        janePerson.age = 35;
+        console.log(peopleArray5); // Output: [{name: "John", age: 25}, {name: "Jane", age: 35}]
+        //Filter the array to get all objects where the age is greater than 25. Given [{name: "John", age: 25}, {name: "Jane", age: 30}, {name: "Jim", age: 27}].
+        // Output: [{name: "Jane", age: 30}, {name: "Jim", age: 27}]
+        const peopleArray6 = [{ name: "John", age: 25 }, { name: "Jane", age: 30 }, { name: "Jim", age: 27 }];
+        const filteredPeople2 = peopleArray6.filter(person => person.age > 25);
+        console.log(filteredPeople2); // Output: [{name: "Jane", age: 30}, {name: "Jim", age: 27}]
+
+
+    </script>
+</body>
+
+</html>

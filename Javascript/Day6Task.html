@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Add the number 5 to the end of the array [1, 2, 3, 4] using the push() method.
+        let arr = [1,2,3,4]
+        arr.push(5)
+        console.log(arr)
+        //.Remove the last element from the array [10, 20, 30, 40] using the pop() method.
+        let popArr = [10, 20, 30, 40]
+        popArr.pop()
+        console.log(popArr)
+        //Add the number 0 to the beginning of the array [1, 2, 3] using the unshift() method.
+        let addFrontArr = [1, 2, 3] ;
+        addFrontArr.unshift(0)
+        console.log(addFrontArr)
+        //Remove the first element from the array ["a", "b", "c", "d"] using the shift() method.
+        let removeFrontArr = ["a", "b", "c", "d"];
+        removeFrontArr.shift();
+        console.log(removeFrontArr)
+        //Find the index of the element "banana" in the array ["apple", "banana", "cherry"].
+        let fruit = ["apple", "banana", "cherry"];
+        console.log(fruit.indexOf("banana"));
+        //Check if the element "dog" exists in the array ["cat", "bird", "fish"].
+        let animal = ["cat", "bird", "fish"];
+        let holdAnimalData = animal.includes("dog");
+        //Reverse the array [1, 2, 3, 4, 5] using the reverse() method.
+        let arrReverse = [1, 2, 3, 4, 5] 
+        console.log(arrReverse.reverse())
+        //Multiply each element in the array [1, 2, 3, 4] by 2 using the map() function.
+        let mapArr = [1, 2, 3, 4];
+        let holdMapArr =  mapArr.map((e)=>{
+            return e*2;
+        })
+        console.log(holdMapArr)
+        //Filter out the numbers greater than 10 from the array [5, 10, 15, 20] using the filter() function.
+        let filterArr=  [5, 10, 15, 20];
+        let newFilterArr = filterArr.filter((e)=>{
+            return e > 10
+        })
+        console.log(newFilterArr)
+        //Find the sum of all elements in the array [1, 2, 3, 4] using the reduce() function.
+        let redSum = [1, 2, 3, 4];
+        let calcSum = redSum.reduce((acc, e)=>{
+            return acc+e
+        },0);
+        console.log(calcSum)
+        //Print each element in the array ["a", "b", "c"] using the forEach() function.
+        let printArr =  ["a", "b", "c"];
+        printArr.forEach((elm)=>{
+            console.log(elm)
+        })
+        // Given the array [{name: "John", age: 25}, {name: "Jane", age: 30}], print the name of the second object.   // Output: "Jane"
+        let person =  [{name: "John", age: 25}, {name: "Jane", age: 30}];
+        console.log(person[1].name)
+        //Add the object {name: "Alice", age: 28} to the array [{name: "John", age: 25}].// Output: [{name: "John", age: 25}, {name: "Alice", age: 28}]
+        let arrObj = [{name: "John", age: 25}];
+        arrObj[1] = {name: "Alice", age: 28};
+        console.log(arrObj)
+        //Filter the objects where the age is greater than 25 in the array [{name: "John", age: 25}, {name: "Jane", age: 30}].// Output: [{name: "Jane", age: 30}]
+        let objOfArr  = [{name: "John", age: 25}, {name: "Jane", age: 30}]
+        let filterObjArr=  objOfArr.filter((e, idx)=>{
+            return objOfArr.age > 25
+        })
+        console.log(filterObjArr)
+
+    </script>
+</body>
+</html>

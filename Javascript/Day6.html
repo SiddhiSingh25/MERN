@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Reduce->return a shallow copy. Doesn't affect on orignal copy
+        let num = [1,2,3,4,5];
+        let newNum = num.reduce((acc, elm)=>{
+            return acc+elm;
+        }, 2) // 2 is the initial val
+        console.log(newNum)
+        // Slice --> return a shallow copy. Doesn't affect on orignal copy
+        let fruit  = ["Apple", "Grapes", "Litchi", "Mango"]
+        let newFruitArr = fruit.slice(0,2);// apple, grapes
+        console.log(newFruitArr);
+        fruit.slice(1,3);
+        //Reverse
+        let revArr = fruit.reverse();
+        console.log(revArr)// return a shallow copy
+        //push --> orignal array will be changed.  add elm from last
+        fruit.push("papaya", "Orange");
+        console.log(fruit);
+        fruit.pop();// orignal array will be changed.  remove elm from last
+        console.log(fruit)
+        let searchElm = "Apple";
+         let getRes = fruit.includes(searchElm);
+        /* if(getRes){
+            alert("Found")
+         }
+         else{
+            alert("Not found")
+         }*/
+         let convertStr = fruit.join(" ");//convert array into strin
+         console.log(convertStr)
+          let name = ["Pk" ,"Sk", "Ak", "Nk"]
+          name.shift();// remove from array from start
+          name.unshift("Sid");//add from array from start
+          
+
+    </script>
+</body>
+</html>
